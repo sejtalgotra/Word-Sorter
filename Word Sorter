@@ -1,0 +1,18 @@
+def sort_words(words):
+    """Sort a list of words alphabetically."""
+    return sorted(words)
+
+def get_words():
+    """Get a list of words from the user."""
+    input_string = input("Enter words separated by spaces: ")
+    return input_string.split()
+
+def main():
+    words = get_words()
+    sorted_words = sort_words(words)
+    print("Sorted words:")
+    for word in sorted_words:
+        print(word)
+
+if __name__ == "__main__":
+    main()
